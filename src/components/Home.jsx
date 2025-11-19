@@ -306,6 +306,7 @@ export default function HomeAnimated() {
         `}</style>
       </section>
 
+
       <Footer />
     </>
   );
