@@ -223,11 +223,11 @@ export default function RegistrationForm() {
                 className="w-full p-3 bg-white/3 border border-white/6 rounded-xl focus:outline-none focus:ring-1 focus:ring-sky-400"
                 disabled={submitted}
               >
-                <option value="">Select year</option>
-                <option value="first">First</option>
-                <option value="second">Second</option>
-                <option value="third">Third</option>
-                <option value="fourth">Fourth</option>
+                <option value="" className="text-gray-700">Select year</option>
+                <option value="first" className="text-gray-700">First</option>
+                <option value="second" className="text-gray-700">Second</option>
+                <option value="third" className="text-gray-700">Third</option>
+                <option value="fourth" className="text-gray-700">Fourth</option>
               </select>
               {errors.year && (
                 <p className="text-red-400 text-sm mt-1">{errors.year.message}</p>
@@ -331,15 +331,15 @@ export default function RegistrationForm() {
 
           {/* Gender */}
           <div className="mt-4">
-            <label className="block mb-1.5 text-sm text-black/90">Gender</label>
+            <label className="block mb-1.5 text-sm text-white/90">Gender</label>
             <select
               {...register("gender", { required: "Choose gender" })}
-              className="w-full p-3 bg-white/3 border border-white/6 rounded-xl focus:outline-none focus:ring-1 focus:ring-sky-400"
+              className="w-full p-3 bg-white/3 border border-white/6 rounded-xl focus:outline-none focus:ring-1 focus:ring-sky-400 "
               disabled={submitted}
             >
               <option value="">Select gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option value="male"  className="text-gray-700">Male</option>
+              <option value="female" className="text-gray-700">Female</option>
               
             </select>
             {errors.gender && (
