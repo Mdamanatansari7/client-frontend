@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 
-const REGISTER_URL = `http://localhost:3000/user/register`;
+const REGISTER_URL = `https://frolic-backend-1.onrender.com/user/register`;
 
 /**
  * formData: a FormData instance (contains image file + all fields)

@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 
-const GET_USERS_URL = `http://localhost:3000/admin/dashboard/public/getallusers`;
+const GET_USERS_URL = `https://frolic-backend-1.onrender.com/admin/dashboard/public/getallusers`;
 
 // Async thunk
 export const fetchAllUsers = createAsyncThunk(

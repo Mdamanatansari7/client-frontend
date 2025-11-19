@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const GET_SCHEDULES_URL = "http://localhost:3000/user/schedule/getallschedules";
+const GET_SCHEDULES_URL = "https://frolic-backend-1.onrender.com/user/schedule/getallschedules";
 
 export const getSchedules = createAsyncThunk(
   "schedule/getSchedules",
