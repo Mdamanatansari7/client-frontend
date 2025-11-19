@@ -46,10 +46,12 @@ export default function HomeAnimated() {
 
   // Achievements to show below countdown
   const achievements = [
-    { year: "2021", title: "Participated", note: "Rebuilding spirit", rank: "Entry", medal: "bronze" },
-    { year: "2022", title: "Overall Champion", note: "GStrong comeback", rank: "Entry", medal: "gold" },
-    { year: "2023", title: "Overall Champion", note: "Strong comeback", rank: "Runner-up", medal: "gold" },
-    { year: "2024", title: "Runner-up", note: "Close fight — our runner-up year", rank: "Runner-up", medal: "silver" },
+   
+    
+    { year: "2019", title: "Overall Champion", note: "Strong comeback", rank: "1st Rank", medal: "gold" },
+    { year: "2022", title: "Overall Champion", note: "Strong comeback", rank: "1st Rank", medal: "gold" },
+    { year: "2023", title: "Overall Champion", note: "Strong comeback", rank: "1st Rank", medal: "gold" },
+   
   ];
 
   // auto-slide index
@@ -127,7 +129,7 @@ export default function HomeAnimated() {
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-cyan-200 to-indigo-400">{typed}<span className="ml-1 inline-block animate-pulse">|</span></span>
               </h1>
 
-              <p className="max-w-xl text-slate-200">Unite — Compete — Celebrate. The biggest college sports &amp; cultural festival of the year.</p>
+              <p className="max-w-xl text-slate-200">Unite Compete Celebrate. The biggest college sports &amp; cultural festival of the year.</p>
 
               <div className="flex flex-wrap items-center gap-3 justify-center lg:justify-start mt-4">
                 <Link to={isLive ? "/live" : "/register"} className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-sky-400 via-indigo-500 to-violet-600 text-slate-900 font-semibold shadow-2xl transform transition hover:scale-[1.03]" style={{ boxShadow: '0 10px 30px rgba(45,118,255,0.18), inset 0 -2px 8px rgba(255,255,255,0.02)' }}>
