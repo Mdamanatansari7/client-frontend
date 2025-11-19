@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 // put your trophy image in src/assets/trophy.png and import it below
-import trophyImg from "../../image/trofi.png";
+import trophyImg from "../../public/image/trofi.png";
 import EventsCarousel from "./Event";
 import Footer from "./footer";
 
