@@ -6,19 +6,136 @@ import Footer from "../footer";
 
 export default function GameCard() {
   const games = [
-    { id: 1, name: "Cricket", emoji: "🏏", description: "Experience the thrill of competitive cricket matches.", rules: "11 players per team, T10 format, 10 overs per side", teamSize: "11 | 4 Extra", genderEligibility: "Boys", color: "from-orange-600 to-yellow-500" },
-    { id: 2, name: "Basketball", emoji: "🏀", description: "Fast-paced basketball action.", rules: "5 players per team, FIBA rules, 40 mins match", teamSize: "5", genderEligibility: "Boys & Girls", color: "from-red-600 to-orange-500" },
-    { id: 3, name: "Badminton", emoji: "🏸", description: "Singles & doubles badminton tournaments.", rules: "Best of 3 sets, 21 points", teamSize: "2", genderEligibility: "Boys & Girls", color: "from-teal-500 to-blue-500" },
-    { id: 4, name: "Volleyball", emoji: "🏐", description: "Dynamic volleyball matches.", rules: "6 players per team", teamSize: "6", genderEligibility: "Boys & Girls", color: "from-indigo-600 to-purple-600" },
-    { id: 5, name: "Tug of War", emoji: "💪", description: "Test your strength & teamwork.", rules: "2 teams, best of 3 pulls", teamSize: "10", genderEligibility: "Boys", color: "from-yellow-600 to-amber-500" },
-    { id: 6, name: "Chess", emoji: "♟️", description: "Battle of minds in chess competitions.", rules: "Classical/Blitz", teamSize: "1", genderEligibility: "Boys & Girls", color: "from-gray-700 to-gray-900" },
-    { id: 7, name: "Rangoli", emoji: "🎨", description: "Creative rangoli making event.", rules: "2 players per team", teamSize: "2", genderEligibility: "Girls", color: "from-pink-500 to-rose-500" },
-    { id: 8, name: "Carrom", emoji: "🎯", description: "Classic carrom – singles & doubles.", rules: "Singles/Doubles", teamSize: "2", genderEligibility: "Boys", color: "from-amber-700 to-yellow-600" },
-    { id: 9, name: "Face Painting", emoji: "🖌️", description: "Express your creativity through painting.", rules: "2 players per team", teamSize: "2", genderEligibility: "Girls", color: "from-fuchsia-600 to-pink-500" },
-    { id: 10, name: "Football", emoji: "⚽", description: "Competitive football tournament.", rules: "11 players per team", teamSize: "11 | 4 Extra", genderEligibility: "Boys", color: "from-green-600 to-emerald-500" },
-    { id: 11, name: "Athletics", emoji: "🏃‍♂️", description: "Track and field athletic events.", rules: "6 players", teamSize: "6", genderEligibility: "Boys", color: "from-blue-600 to-sky-500" },
-    { id: 12, name: "Mehndi", emoji: "🌿", description: "Traditional Mehndi competition.", rules: "2 players per team", teamSize: "2", genderEligibility: "Girls", color: "from-rose-600 to-red-500" },
-    { id: 13, name: "Shot Put", emoji: "🥇", description: "Strength-based shot put competition.", rules: "2 players per team", teamSize: "2", genderEligibility: "Boys", color: "from-slate-600 to-gray-700" },
+    {
+      id: 1,
+      name: "Cricket",
+      emoji: "🏏",
+      description: "Experience the thrill of competitive cricket matches.",
+      rules: "11 players per team, T10 format, 10 overs per side",
+      teamSize: "11 | 4 Extra",
+      genderEligibility: "Boys",
+      color: "from-orange-600 to-yellow-500",
+    },
+    {
+      id: 2,
+      name: "Basketball",
+      emoji: "🏀",
+      description: "Fast-paced basketball action.",
+      rules: "5 players per team, FIBA rules, 40 mins match",
+      teamSize: "5",
+      genderEligibility: "Boys & Girls",
+      color: "from-red-600 to-orange-500",
+    },
+    {
+      id: 3,
+      name: "Badminton",
+      emoji: "🏸",
+      description: "Singles & doubles badminton tournaments.",
+      rules: "Best of 3 sets, 21 points",
+      teamSize: "2",
+      genderEligibility: "Boys & Girls",
+      color: "from-teal-500 to-blue-500",
+    },
+    {
+      id: 4,
+      name: "Volleyball",
+      emoji: "🏐",
+      description: "Dynamic volleyball matches.",
+      rules: "6 players per team",
+      teamSize: "6",
+      genderEligibility: "Boys & Girls",
+      color: "from-indigo-600 to-purple-600",
+    },
+    {
+      id: 5,
+      name: "Tug of War",
+      emoji: "💪",
+      description: "Test your strength & teamwork.",
+      rules: "2 teams, best of 3 pulls",
+      teamSize: "10",
+      genderEligibility: "Boys",
+      color: "from-yellow-600 to-amber-500",
+    },
+    {
+      id: 6,
+      name: "Chess",
+      emoji: "♟️",
+      description: "Battle of minds in chess competitions.",
+      rules: "Classical/Blitz",
+      teamSize: "1",
+      genderEligibility: "Boys & Girls",
+      color: "from-gray-700 to-gray-900",
+    },
+    {
+      id: 7,
+      name: "Rangoli",
+      emoji: "🎨",
+      description: "Creative rangoli making event.",
+      rules: "2 players per team",
+      teamSize: "2",
+      genderEligibility: "Girls",
+      color: "from-pink-500 to-rose-500",
+    },
+    {
+      id: 8,
+      name: "Carrom",
+      emoji: "🎯",
+      description: "Classic carrom – singles & doubles.",
+      rules: "Singles/Doubles",
+      teamSize: "2",
+      genderEligibility: "Boys",
+      color: "from-amber-700 to-yellow-600",
+    },
+    {
+      id: 9,
+      name: "Face Painting",
+      emoji: "🖌️",
+      description: "Express your creativity through painting.",
+      rules: "2 players per team",
+      teamSize: "2",
+      genderEligibility: "Girls",
+      color: "from-fuchsia-600 to-pink-500",
+    },
+    {
+      id: 10,
+      name: "Football",
+      emoji: "⚽",
+      description: "Competitive football tournament.",
+      rules: "11 players per team",
+      teamSize: "11 | 4 Extra",
+      genderEligibility: "Boys",
+      color: "from-green-600 to-emerald-500",
+    },
+    {
+      id: 11,
+      name: "Athletics",
+      emoji: "🏃‍♂️",
+      description: "Track and field athletic events.",
+      rules: "6 players",
+      teamSize: "6",
+      genderEligibility: "Boys & Girls",
+      color: "from-blue-600 to-sky-500",
+    },
+    {
+      id: 12,
+      name: "Mehndi",
+      emoji: "🌿",
+      description: "Traditional Mehndi competition.",
+      rules: "2 players per team",
+      teamSize: "2",
+      genderEligibility: "Girls",
+      color: "from-rose-600 to-red-500",
+    },
+    {
+      id: 13,
+      name: "Shot Put",
+      emoji: "🥇",
+      description: "Strength-based shot put competition.",
+      rules: "2 players per team",
+      teamSize: "2",
+      genderEligibility: "Boys",
+      color: "from-slate-600 to-gray-700",
+    },
   ];
 
   return (
@@ -87,9 +204,7 @@ export default function GameCard() {
                 <div
                   className={`p-6 bg-gradient-to-r ${game.color} flex justify-between items-center`}
                 >
-                  <h3 className="text-white text-2xl font-bold">
-                    {game.name}
-                  </h3>
+                  <h3 className="text-white text-2xl font-bold">{game.name}</h3>
                   <div
                     className="text-4xl w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl"
                     aria-hidden="true"
@@ -127,7 +242,9 @@ export default function GameCard() {
                       <Heart className="text-red-400" />
                       <div>
                         <p className="text-xs text-white/60">Eligible</p>
-                        <p className="font-semibold">{game.genderEligibility}</p>
+                        <p className="font-semibold">
+                          {game.genderEligibility}
+                        </p>
                       </div>
                     </div>
                   </div>
