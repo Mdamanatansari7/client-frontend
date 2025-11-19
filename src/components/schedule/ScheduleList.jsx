@@ -26,7 +26,7 @@ const ScheduleList = () => {
   if (error) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-[#071033] via-[#072b4f] to-[#071028] flex items-center justify-center">
-        <p className="text-red-400 text-xl"> this is the {error}</p>
+        <p className="text-red-400 text-xl"> {error}</p>
       </div>
     );
   }
