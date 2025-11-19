@@ -244,12 +244,7 @@ export default function RegistrationForm() {
                 disabled={submitted}
               >
                 <option value="CSE">CSE (Computer Science)</option>
-                <option value="ECE">ECE</option>
-                <option value="ME">Mechanical</option>
-                <option value="CE">Civil</option>
-                <option value="EE">Electrical</option>
-                <option value="IT">IT</option>
-                <option value="OTHER">Other</option>
+                
               </select>
 
               {errors.branch && (
@@ -271,7 +266,7 @@ export default function RegistrationForm() {
                 setValueAs: (v) => (v || "").toUpperCase().trim(),
               })}
               className="w-full p-3 bg-white/3 border border-white/6 rounded-xl focus:outline-none focus:ring-1 focus:ring-sky-400"
-              placeholder="e.g. CSE21/045"
+              placeholder="e.g. CSE/105/22"
               disabled={submitted}
             />
             {errors.rollNumber && (
@@ -336,16 +331,16 @@ export default function RegistrationForm() {
 
           {/* Gender */}
           <div className="mt-4">
-            <label className="block mb-1.5 text-sm text-white/90">Gender</label>
+            <label className="block mb-1.5 text-sm text-black/90">Gender</label>
             <select
               {...register("gender", { required: "Choose gender" })}
-              className="w-full p-3 bg-black border border-white/6 rounded-xl focus:outline-none focus:ring-1 focus:ring-sky-400"
+              className="w-full p-3 bg-white/3 border border-white/6 rounded-xl focus:outline-none focus:ring-1 focus:ring-sky-400"
               disabled={submitted}
             >
               <option value="">Select gender</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
-              <option value="other">Other</option>
+              
             </select>
             {errors.gender && (
               <p className="text-red-400 text-sm mt-1">{errors.gender.message}</p>
@@ -377,7 +372,7 @@ export default function RegistrationForm() {
 
           {/* Image Upload */}
           <div className="mt-4">
-            <label className="block mb-2 text-sm text-white/90">Profile Image (optional)</label>
+            <label className="block mb-2 text-sm text-white/90">College id  (required)</label>
             <div className="flex items-center gap-4">
               <label className="flex flex-col items-center px-4 py-2 bg-white/3 border border-white/6 rounded-xl cursor-pointer hover:bg-white/4">
                 <span className="text-sm text-white/90">Choose image</span>
