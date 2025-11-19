@@ -257,6 +257,7 @@ const allCoordinators = [
     phone: "9060753584",
     img: "../../image/simran.jpeg",
   },
+  
   {
     id: 32,
     name: "Rashmi Kumari",
@@ -281,6 +282,16 @@ const allCoordinators = [
     phone: "8102086869",
     img: "../../image/sakchi.jpeg",
   },
+  {
+  id: 35,
+  name: "Ankit Prasad",
+  gender: "boy",           // <- singular 'boy' (matches your filters)
+  roles: ["Football"],
+  phone: "9334990991",
+  img: "../../public/image/ankit.jpeg",
+},
+
+  
 ];
 
 const techTeam = [
@@ -322,7 +333,6 @@ function getRoleClass(role) {
   return "bg-slate-100 text-slate-900";
 }
 
-/* --- small util to hide phone if placeholder text like 'coming Soon' --- */
 function isValidPhone(phone) {
   if (!phone) return false;
   const p = String(phone).toLowerCase();
@@ -479,7 +489,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-cyan-200 to-indigo-400">
-              LOGICAL — CSE Frolic 2K25
+              LOGICAL CSE FROLIC 2K25
             </h1>
             <p className="mt-3 text-white/80 max-w-2xl mx-auto">{intro}</p>
           </div>
