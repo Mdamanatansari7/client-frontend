@@ -579,50 +579,78 @@ export default function Header() {
       </header>
 
       {/* ===================== MOBILE MENU — RIGHT SIDE SLIDE ===================== */}
-      <div
-        id="mobile-menu"
-        className={`md:hidden fixed top-0 right-0 h-full w-64 
-                    bg-[#071028]/95 backdrop-blur-xl border-l border-white/10
-                    transition-transform duration-300 ease-out z-[999]
-                    ${isOpen ? "translate-x-0" : "translate-x-full"}`}
-        aria-hidden={!isOpen}
-      >
-        <div className="p-6 flex flex-col gap-4">
+      {/* ================= FULL SCREEN MOBILE MENU ================= */}
+<div
+  className={`md:hidden fixed inset-0 bg-black/80 backdrop-blur-2xl z-[999]
+              transition-opacity duration-300 ease-out
+              ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+>
 
-          <Link onClick={closeMenu} to="/" className="py-2 px-3 rounded-md text-white/95 hover:bg-white/10 transition">
-            Home
-          </Link>
+  {/* Close Button (Top Right) */}
+  <button
+    onClick={closeMenu}
+    className="absolute top-6 right-6 p-2 rounded-lg bg-white/10 text-white backdrop-blur-md"
+  >
+    <X size={26} />
+  </button>
 
-          <Link onClick={closeMenu} to="/games" className="py-2 px-3 rounded-md text-white/95 hover:bg-white/10 transition">
-            Games
-          </Link>
+  {/* Center Menu Items */}
+  <div className="flex flex-col items-center justify-center h-full gap-8">
 
-          <Link onClick={closeMenu} to="/schedule" className="py-2 px-3 rounded-md text-white/95 hover:bg-white/10 transition">
-            Schedule
-          </Link>
+    <Link
+      to="/"
+      onClick={closeMenu}
+      className="text-white text-2xl font-semibold tracking-wide"
+    >
+      Home
+    </Link>
 
-          <Link onClick={closeMenu} to="/participants" className="py-2 px-3 rounded-md text-white/95 hover:bg-white/10 transition">
-            Participants
-          </Link>
+    <Link
+      to="/games"
+      onClick={closeMenu}
+      className="text-white text-2xl font-semibold tracking-wide"
+    >
+      Games
+    </Link>
 
-          <Link onClick={closeMenu} to="/about" className="py-2 px-3 rounded-md text-white/95 hover:bg-white/10 transition">
-            About
-          </Link>
+    <Link
+      to="/schedule"
+      onClick={closeMenu}
+      className="text-white text-2xl font-semibold tracking-wide"
+    >
+      Schedule
+    </Link>
 
-          {/* BUTTON */}
-          <Link
-            to="/register"
-            onClick={closeMenu}
-            className="mt-4 text-center rounded-md px-4 py-2 font-semibold"
-            style={{
-              background: "linear-gradient(90deg,#06b6d4,#7c3aed)",
-              color: "#071124",
-            }}
-          >
-            Register Now
-          </Link>
-        </div>
-      </div>
+    <Link
+      to="/participants"
+      onClick={closeMenu}
+      className="text-white text-2xl font-semibold tracking-wide"
+    >
+      Participants
+    </Link>
+
+    <Link
+      to="/about"
+      onClick={closeMenu}
+      className="text-white text-2xl font-semibold tracking-wide"
+    >
+      About
+    </Link>
+
+    <Link
+      to="/register"
+      onClick={closeMenu}
+      className="mt-4 px-6 py-3 rounded-md text-black font-semibold text-lg"
+      style={{
+        background: "linear-gradient(90deg,#06b6d4,#7c3aed)",
+      }}
+    >
+      Register Now
+    </Link>
+
+  </div>
+</div>
+
 
       {/* STYLES */}
       <style>{`
