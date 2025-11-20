@@ -400,7 +400,7 @@ export default function RegistrationForm() {
                   if (!file) return true;
                   if (!ALLOWED_TYPES.includes(file.type))
                     return "Only JPG/PNG/WEBP allowed";
-                  if (file.size > MAX_FILE_SIZE) return "Image must be ≤ 5MB";
+                  if (file.size > MAX_FILE_SIZE) return "Image must be ≤ 2MB";
                   return true;
                 },
               })}
@@ -409,7 +409,7 @@ export default function RegistrationForm() {
             {errors.image && (
               <p className="text-red-400 text-sm mt-1">{errors.image.message}</p>
             )}
-            <p className="text-xs text-white/60 mt-2">Allowed: JPG/PNG/WEBP — Max: 5MB</p>
+            <p className="text-xs text-white/60 mt-2">Allowed: JPG/PNG/WEBP — Max: 2MB</p>
           </div>
 
           {/* server messages */}
