@@ -126,7 +126,7 @@ const allCoordinators = [
     name: "Md Raiyan",
     gender: "boy",
     roles: ["Badminton", "Discipline"],
-    phone: "N/A",
+    phone: "9263404505",
     img: "../../image/raiyan.jpeg",
   },
   {
