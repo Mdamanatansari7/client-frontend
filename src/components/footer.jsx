@@ -117,11 +117,16 @@ const Footer = () => {
         <div className="pt-8 text-center">
           <p className="text-sm text-blue-200/70">
             © 2025 LOGICAL – RVS College of Engineering & Technology. All rights reserved.
-            <br />
-            Developed by{" "}
-            <span className="text-sky-300 font-semibold hover:text-sky-400 transition">
-              Md Amanat Ansari
-            </span>
+           <br />
+Developed by |
+<a 
+    href="https://github.com/Mdamanatansari7" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="text-sky-300 font-semibold hover:text-sky-400 transition"
+>
+     | Md Amanat Ansari ||
+</a>
             
           </p>
         </div>
