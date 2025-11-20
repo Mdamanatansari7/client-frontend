@@ -115,7 +115,7 @@ const allCoordinators = [
   },
   {
     id: 14,
-    name: "Anish Kumar",
+    name: "Anish Kumar Singh",
     gender: "boy",
     roles: ["Cricket", "Refreshment"],
     phone: "8757848190",
@@ -135,7 +135,7 @@ const allCoordinators = [
     gender: "boy",
     roles: ["Badminton",],
     phone: "6299561212",
-    img: "../../public/image/nikhil.jpeg",
+    img: "../../image/nikhil.jpeg",
   },
   {
     id: 16,
@@ -296,7 +296,7 @@ const allCoordinators = [
   gender: "boy",           // <- singular 'boy' (matches your filters)
   roles: ["Football"],
   phone: "9334990991",
-  img: "../../public/image/ankit.jpeg",
+  img: "../../image/ankit.jpeg",
 },
 
   
