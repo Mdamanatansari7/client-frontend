@@ -37,6 +37,7 @@ import Body from "./components/Body";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 // Lazy-loaded components
 const ScheduleList = lazy(() => import("./components/schedule/ScheduleList"));
 const RegistrationForm = lazy(() => import("./components/userRegistrationForm/Registration"));
@@ -59,6 +60,7 @@ function App() {
             <Route path="/games" element={<GameCard />} />
             <Route path="/about" element={<About />} />
             <Route path="/participants" element={<ParticipantsPage />} />
+            
 
           </Route>
         </Routes>

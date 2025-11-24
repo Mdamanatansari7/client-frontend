@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import trophyImg from "../../public/image/trofi.png";
+import EventHighlightsSection from "./EventHighlightsSection";
 import Footer from "./footer";
 
 // EVENT TARGET (Asia/Kolkata)
@@ -48,9 +49,9 @@ export default function HomeAnimated() {
   const achievements = [
    
     
-    { year: "2019", title: "Overall Champion", note: "Strong comeback", rank: "1st Rank", medal: "gold" },
-    { year: "2022", title: "Overall Champion", note: "Strong comeback", rank: "1st Rank", medal: "gold" },
-    { year: "2023", title: "Overall Champion", note: "Strong comeback", rank: "1st Rank", medal: "gold" },
+    { year: "2019", title: "Overall Champion", note: "Strong comeback", rank: "WINNER", medal: "gold" },
+    { year: "2022", title: "Overall Champion", note: "Strong comeback", rank: "WINNER", medal: "gold" },
+    { year: "2023", title: "Overall Champion", note: "Strong comeback", rank: "WINNER", medal: "gold" },
    
   ];
 
@@ -236,6 +237,7 @@ export default function HomeAnimated() {
           .blur-3xl { filter: blur(48px); }
         `}</style>
       </section>
+     <EventHighlightsSection/>
 
       <Footer />
     </>
